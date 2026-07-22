@@ -1,0 +1,14 @@
+{
+  "name": "codex-of-rust",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node tests/ruleGear.test.js && node tests/integration.test.js"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

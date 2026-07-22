@@ -1,0 +1,74 @@
+{
+  "levels": [
+    {
+      "id": "1-1",
+      "name": "锈蚀觉醒",
+      "tileSize": 64,
+      "width": 17,
+      "height": 11,
+      "playerStart": { "x": 1, "y": 1 },
+      "altar": { "x": 11, "y": 7 },
+      "tiles": [
+        "#################",
+        "#S..............#",
+        "#...............#",
+        "#.GGGGGGGGGGGGG.#",
+        "#.G...L.......G.#",
+        "#.G...M..M....G.#",
+        "#.G......D....G.#",
+        "#.G........A..G.#",
+        "#.G...........G.#",
+        "#.GGGGGGGGGGGGG.#",
+        "#################"
+      ],
+      "gears": [
+        {
+          "x": 3,
+          "y": 1,
+          "subjectOptions": ["GEAR"],
+          "verbOptions": ["IS"],
+          "objectOptions": ["STOP", "BRIDGE"],
+          "subjectIndex": 0,
+          "verbIndex": 0,
+          "objectIndex": 0
+        }
+      ],
+      "lights": [
+        {
+          "x": 6,
+          "y": 4,
+          "direction": "down",
+          "active": true
+        }
+      ],
+      "mirrors": [
+        {
+          "x": 6,
+          "y": 5,
+          "angle": 0
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "angle": 0
+        }
+      ],
+      "receivers": [
+        {
+          "x": 9,
+          "y": 7,
+          "direction": "up",
+          "opens": "9,6"
+        }
+      ],
+      "symbols": [
+        { "x": 3, "y": 1, "glyph": "⚙" },
+        { "x": 5, "y": 4, "glyph": "↗" },
+        { "x": 8, "y": 4, "glyph": "↗" },
+        { "x": 9, "y": 7, "glyph": "符" },
+        { "x": 11, "y": 7, "glyph": "核" }
+      ],
+      "introText": "齿轮为桥，镜面为引，符文为钥。让光抵达沉睡的符文，开启封印之门。"
+    }
+  ]
+}
